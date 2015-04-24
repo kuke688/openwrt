@@ -1,0 +1,74 @@
+Source-Makefile: feeds/extra/packages/shadowsocks-libev/Makefile
+Package: shadowsocks-libev
+Version: 1.4.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: Lightweight Secured Socks5 Proxy (OpenSSL)
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Source: shadowsocks-libev-1.4.7.tar.gz
+Type: ipkg
+Description: Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+https://github.com/madeye/shadowsocks-libev
+Max Lv <max.c.lv@gmail.com>
+@@
+
+Package: shadowsocks-libev-polarssl
+Version: 1.4.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpolarssl
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Source: shadowsocks-libev-1.4.7.tar.gz
+Type: ipkg
+Description: Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+https://github.com/madeye/shadowsocks-libev
+Max Lv <max.c.lv@gmail.com>
+@@
+
+Package: shadowsocks-libev-server
+Version: 1.4.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libopenssl +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: openssl
+Section: net
+Category: Network
+Title: Lightweight Secured Socks5 Proxy (OpenSSL)
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Source: shadowsocks-libev-1.4.7.tar.gz
+Type: ipkg
+Description: Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+https://github.com/madeye/shadowsocks-libev
+Max Lv <max.c.lv@gmail.com>
+@@
+
+Package: shadowsocks-libev-server-polarssl
+Version: 1.4.7-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +libpolarssl +libpthread
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Variant: polarssl
+Section: net
+Category: Network
+Title: Lightweight Secured Socks5 Proxy (PolarSSL)
+Maintainer: Max Lv <max.c.lv@gmail.com>
+Source: shadowsocks-libev-1.4.7.tar.gz
+Type: ipkg
+Description: Shadowsocks-libev is a lightweight secured scoks5 proxy for embedded devices and low end boxes.
+https://github.com/madeye/shadowsocks-libev
+Max Lv <max.c.lv@gmail.com>
+@@
+
+

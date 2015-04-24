@@ -1,0 +1,21 @@
+Source-Makefile: feeds/extra/luci/luci-extra/Makefile
+Package: luci-app-aria2
+Submenu: 3. Applications
+Version: 2014-09-04-1
+Depends: +libc +SSP_SUPPORT:libssp +USE_GLIBC:librt +USE_GLIBC:libpthread +PACKAGE_luci-app-aria2:aria2 +PACKAGE_luci-app-aria2:yaaw
+Conflicts: 
+Menu-Depends: 
+Provides: 
+Build-Depends: lua/host
+Section: luci
+Category: LuCI
+Title: LuCI Support for Aria2
+Maintainer: nanpuyue <nanpuyue@gmail.com>
+Source: 
+Type: ipkg
+Description: LuCI Support for Aria2
+https://github.com/nanpuyue/openwrt-extra/
+nanpuyue <nanpuyue@gmail.com>
+@@
+
+
