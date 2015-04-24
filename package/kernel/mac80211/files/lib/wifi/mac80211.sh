@@ -110,18 +110,33 @@ detect_mac80211() {
 		cat <<EOF
 config wifi-device  radio$devidx
 	option type     mac80211
-	option channel  ${channel}
-	option hwmode	11${mode_band}
-$dev_id
-$ht_capab
+	# option channel  ${channel}
+	# option hwmode	11${mode_band}
+	option channel	11
+	option hwmode	11ng
+	option path	'10180000.wmac'
+	option htmode	HT20
+	list ht_capab	GF
+	list ht_capab	SHORT-GI-20
+	list ht_capab	SHORT-GI-40
+	list ht_capab	TX-STBC
+	list ht_capab	RX-STBC12
+# $dev_id
+# $ht_capab
 	# REMOVE THIS LINE TO ENABLE WIFI:
-	option disabled 1
+	# option disabled 1
+	option disabled	0
+	option noscan	1
+	option txpower 20
+	option htmode HT40-
 
 config wifi-iface
 	option device   radio$devidx
 	option network  lan
 	option mode     ap
-	option ssid     OpenWrt
+	#自定义SSID为MakeBlaze_MAC后六位
+	# option ssid     OpenWrt
+	option ssid	MakeBleaze_$(cat /sys/class/ieee80211/${dev}/macaddress|awk -F":"'{print $4""$5""$6 }'| tr a-z A-Z)
 	option encryption none
 
 EOF
